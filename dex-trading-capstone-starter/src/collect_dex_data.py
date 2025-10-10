@@ -1,10 +1,10 @@
-# From your repo root
+
 mkdir -p scripts data logs
 
 # ---- Python collector ----
 cat > scripts/collect_dex_data.py <<'PY'
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
 
 """
 scripts/collect_dex_data.py
@@ -109,7 +109,7 @@ def read_existing_rows_indexed(csv_path: str) -> set:
         except StopIteration:
             return keyset
         for line in f:
-            # small, quick parse by position to avoid csv.DictReader overhead on large files
+         
             pass
     # Fall back to DictReader (safe path)
     import csv as _csv
@@ -223,7 +223,7 @@ cat > requirements.txt <<'REQ'
 requests>=2.32.0
 REQ
 
-# ---- optional: Makefile for convenience ----
+
 cat > Makefile <<'MK'
 .PHONY: venv install run once
 
