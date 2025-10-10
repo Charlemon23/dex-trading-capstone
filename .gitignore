@@ -1,0 +1,4 @@
+# Ignore raw data files
+data/
+*.csv
+*.log
