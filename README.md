@@ -9,7 +9,7 @@ This repository is the starter implementation for the capstone project **Analyzi
 - Basic project structure to grow into analysis & visualization
 
 ## Quickstart
-1. Create and populate a `.env` file (see `.env.example`).
+1. Create and populate a `.env` file.
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
